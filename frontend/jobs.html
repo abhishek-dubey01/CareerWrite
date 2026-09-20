@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs - CareerWrite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">Career<span>Write</span></div>
+        <ul id="nav-links"></ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Browse Jobs</h1>
+
+        <div class="search-bar">
+            <input type="text" id="search-keyword" placeholder="Job title or company...">
+            <input type="text" id="search-location" placeholder="Location...">
+            <select id="search-category">
+                <option value="">All Categories</option>
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Business">Business</option>
+            </select>
+            <button id="search-btn" class="btn">Search</button>
+        </div>
+
+        <div class="job-grid" id="job-grid">
+            <p class="empty-msg">Loading jobs...</p>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 CareerWrite - A student mini project</footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>

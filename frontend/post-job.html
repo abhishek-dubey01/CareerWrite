@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - CareerWrite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">Career<span>Write</span></div>
+        <ul id="nav-links"></ul>
+    </nav>
+
+    <div class="form-card" id="post-job-wrapper" style="max-width: 550px;">
+        <h2>Post a New Job</h2>
+        <p class="error-msg" id="error-msg"></p>
+        <p class="success-msg" id="success-msg"></p>
+
+        <form id="post-job-form">
+            <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" required>
+            </div>
+            <div class="form-group">
+                <label for="job-company">Company Name</label>
+                <input type="text" id="job-company" required>
+            </div>
+            <div class="form-group">
+                <label for="job-location">Location</label>
+                <input type="text" id="job-location" required>
+            </div>
+            <div class="form-group">
+                <label for="job-category">Category</label>
+                <select id="job-category" required>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Business">Business</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="job-salary">Salary (optional)</label>
+                <input type="text" id="job-salary" placeholder="e.g. 5-8 LPA">
+            </div>
+            <div class="form-group">
+                <label for="job-description">Job Description</label>
+                <textarea id="job-description" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="width:100%;">Post Job</button>
+        </form>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>

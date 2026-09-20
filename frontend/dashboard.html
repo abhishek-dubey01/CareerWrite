@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CareerWrite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">Career<span>Write</span></div>
+        <ul id="nav-links"></ul>
+    </nav>
+
+    <div class="container" id="dashboard-wrapper">
+        <h1 class="page-title">Welcome, <span id="welcome-name">...</span></h1>
+        <p class="meta" id="dashboard-role-label" style="margin-bottom: 15px; color:#666;"></p>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="number" id="stat-total-jobs">0</div>
+                <div class="label" id="label-total-jobs">Total Jobs</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="stat-applied">0</div>
+                <div class="label" id="label-applied">Applied</div>
+            </div>
+        </div>
+
+        <h2 class="section-heading">Recent Applications</h2>
+        <table>
+            <thead>
+                <tr><th>Job Title</th><th>Applicant / Company</th><th>Status</th></tr>
+            </thead>
+            <tbody id="recent-applications-body">
+                <tr><td colspan="3" class="empty-msg">Loading...</td></tr>
+            </tbody>
+        </table>
+
+        <div id="seeker-extra">
+            <h2 class="section-heading">Latest Jobs</h2>
+            <div class="job-grid" id="latest-jobs-grid"></div>
+        </div>
+
+        <div id="recruiter-extra" style="display:none; margin-top:20px;">
+            <a href="post-job.html" class="btn">+ Post a New Job</a>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 CareerWrite - A student mini project</footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/jobs.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
